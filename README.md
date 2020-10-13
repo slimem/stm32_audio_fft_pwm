@@ -1,6 +1,6 @@
 # stm32_audio_fft_pwm
 ---
-This is a **STM32F407VG** project that reads audio data from the input pin ```PC0```, applies FFT and uses the low, mid and high audio frequencies to control 3 RGB led strips using 3x3 PWMs (9 in total). Light intesity changes are eased out using a **exp(-t/100)** exponent.
+This is a **STM32F407VG** project that reads audio data from the input pin ```PC0```, applies FFT and uses the low, mid and high audio frequencies to control 3 RGB led strips using 3x3 PWMs (9 in total).
 
 This project also configures a Virtual COM Port (VCP) which will make the STM32 appear as a COM port, so you can transmit and receive data using the functions ```VCP_send_str()``` and ```VCP_get_string()```.
 
